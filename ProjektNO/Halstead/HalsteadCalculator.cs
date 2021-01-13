@@ -42,7 +42,9 @@ namespace ProjektNO.Halstead
         public int l => _n1 + _n2;
         public int L => _L1 + _L2;
         public double V => L * Math.Log(_n1 + _n2, 2);
-        public double T => _n1 * _L2 / (2 * _n2);
+        public double T => _n2 != 0
+            ? _n1 * _L2 / (2 * _n2)
+            : double.PositiveInfinity;
         public double E => V * T;
         public double N => V / 3000;
 

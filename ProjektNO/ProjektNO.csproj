@@ -127,7 +127,6 @@
     </EmbeddedResource>
     <Antlr4 Include="Halstead\C.g4" />
     <None Include="packages.config" />
-    <None Include="ProjektNO_TemporaryKey.pfx" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

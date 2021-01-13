@@ -54,7 +54,6 @@ namespace ProjektNO.Halstead
                     t => t.Type >= FirstOperator 
                         && t.Type <= LastOperator
                         && !NonOperators.Contains(t.Type)
-                    || AdditionalOperators.Contains(t.Type)
                     || IsMethodInvocation(tokens, t)
                 ).ToList();
         }
